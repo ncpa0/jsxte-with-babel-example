@@ -1,0 +1,29 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                },
+                "modules": "commonjs"
+            }
+        ],
+        [
+            "@babel/preset-typescript",
+            {
+                "allExtensions": true,
+                "isTSX": true
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-react-jsx",
+            {
+                "runtime": "automatic",
+                "importSource": "jsxte"
+            }
+        ]
+    ]
+}
